@@ -60,7 +60,7 @@ Jupyter Notebook
 │   └── 
 
 │
-├── cleaning_log.txt
+├── https://github.com/aartimadole/syntecxhub_project1/blob/606deb428595b64487fc75cebad8948189f44b71/syntecxhub_project1/Data_cleaning_utility/cleaning_log.txt
 └── README.md
 
 📈 Cleaning Process Summary
