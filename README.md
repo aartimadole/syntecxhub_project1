@@ -47,8 +47,7 @@ Matplotlib
 Jupyter Notebook
 
 📂 Project Structure
-data-cleaning-utility/
-
+syntecxhub_project1/Data_cleaning_utility
 │
 ├── data/
 │   ├── Sample - Superstore.csv
