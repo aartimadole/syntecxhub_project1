@@ -1,30 +1,38 @@
-🧹 Automated Data Cleaning & Validation Pipeline
+🧹 Automated Data Cleaning & Validation Pipeline using Python & Pandas
 
-This project implements a reusable and structured data cleaning utility using Python and Pandas. It prepares raw datasets for analysis by applying industry-standard preprocessing techniques and generating a cleaning audit log.
+A production-style data cleaning and validation pipeline built to simulate real-world data preprocessing workflows used in analytics and consulting environments. 
+
+📌 Project Overview
+
+This project implements an automated data cleaning and validation pipeline to prepare raw datasets for analysis.
+It standardizes column names, handles missing values, corrects data types, removes duplicates, detects outliers, and generates a structured cleaning log for transparency.
+
+The objective is to simulate real-world data preprocessing workflows used in analytics and consulting environments.
 
 🚀 Key Features
 
-Standardizes column names (lowercase + underscores)
+Standardized column names (lowercase + underscores)
 
-Detects and handles missing values (median/mode imputation)
+Missing value detection and imputation (median for numeric, mode for categorical)
 
-Parses and validates date columns
+Date parsing and dtype correction
 
-Fixes incorrect numeric data types
+Duplicate removal
 
-Removes duplicate records
+Outlier detection using IQR method
 
-Performs outlier detection using IQR
+Business validation checks (e.g., negative sales detection)
 
-Applies basic business validation checks
+Before vs After data quality summary
 
-Exports cleaned dataset
+Automated cleaning log generation
 
-Generates a structured cleaning log for transparency
+Export of cleaned dataset
 
-📊 Dataset Used
+📊 Dataset
 
-Sample Superstore Dataset (Retail Sales Data)
+Sample Superstore Dataset
+Retail sales dataset containing order details, customer information, sales, profit, and regional data.
 
 🛠️ Technologies Used
 
@@ -38,13 +46,59 @@ Matplotlib
 
 Jupyter Notebook
 
-📈 Output Files
+📂 Project Structure
+data-cleaning-utility/
+│
+├── data/
+│   ├── Sample - Superstore.csv
+│   └── cleaned_dataset.csv
+│
+├── notebooks/
+│   └── Data Cleaning Utility.ipynb
+│
+├── cleaning_log.txt
+└── README.md
+
+📈 Cleaning Process Summary
+1️⃣ Data Standardization
+
+Removed extra spaces
+
+Converted column names to lowercase
+
+Replaced spaces with underscores
+
+2️⃣ Missing Value Handling
+
+Numeric columns → filled using median
+
+Categorical columns → filled using mode
+
+3️⃣ Data Type Validation
+
+Converted date columns to datetime
+
+Ensured numeric columns are properly formatted
+
+4️⃣ Duplicate Removal
+
+Removed duplicate records to improve data integrity
+
+5️⃣ Outlier Detection
+
+Used Interquartile Range (IQR) method to detect extreme sales values
+
+6️⃣ Business Validation
+
+Checked for invalid negative sales values
+
+📁 Output Files
 
 cleaned_dataset.csv
 
 cleaning_log.txt
 
-Summary analysis reports
+Summary console report (Before vs After cleaning)
 
 💼 Skills Demonstrated
 
@@ -60,6 +114,22 @@ Data Validation
 
 Automation & Logging
 
+Structured Project Documentation
+
+🎯 Business Value
+
+This pipeline ensures:
+
+Improved data reliability
+
+Reduced manual preprocessing effort
+
+Transparent and reproducible cleaning workflow
+
+Audit-ready documentation
+
 👩‍💻 Author
 
 Aarti Sachin Madole
+Aspiring Data Analyst | Python | Pandas | Data Cleaning | EDA
+
