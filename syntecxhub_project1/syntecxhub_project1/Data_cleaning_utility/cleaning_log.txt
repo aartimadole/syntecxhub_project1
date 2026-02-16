@@ -1,0 +1,6 @@
+Standardized column names (lowercase + underscores)
+Converted order_date to datetime
+Converted ship_date to datetime
+Validated numeric data types
+Removed duplicates (Before: 9994, After: 9994)
+Saved cleaned dataset as cleaned_dataset.csv
